@@ -1,20 +1,182 @@
 
 
 
-
-.components {
+.navigator{
+   width: 576px;
+   display: grid;
+   padding:3px;
+   grid-template-areas: "img";
    
-   height: 250px;
+
+}
+@media (min-width:768px){
+   .navigator {
+     width:auto ;
+     padding:3px ;
+     display: grid;
+     grid-template-areas: "img";
+
+   }
+}
+.img {
+   grid-area: img;
+   width: 100%;
   
 }
-
-img {
-   border-radius: 50%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
+.Handbags {
+   height: 150px;
+   background-image: url(../img/images\ \(1\).jpg);
+   overflow: auto;
+   background-size: cover;
    
+}
+
+.Watch {
+
+   height: 150px;
+   background-image: url(../img/time-3091031_1280.webp);
+   overflow: auto;
+   background-size: cover;
+}
+
+.Shoes {
+   height: 150px;
+   background-image: url(../img/photo-1617604250287-e36500f9e21b.jpg);
+   overflow: auto;
+   background-size: cover;
+}
+
+
+.pfotobanner {
+  width: 576px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  grid-template-areas: "Handbags"
+                        "Watch"
+                        "Shoes";
+}
+
+@media (min-width:768px) {
+.pfotobanner {
+   width: 100%;
+   height: 200px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: 1fr;
+   gap: 10px;
+   grid-template-areas:"Handbags Watch Shoes";
+
+}
+}
+.card1 {
+   grid-area: card1;
+   
+}
+.card2 {
+   grid-area: card2;
+   
+}
+.card3 {
+   grid-area: card3;
+   
+}
+.card4 {
+   grid-area: card4;
+}
+.card5 {
+   grid-area: card5;
+}
+.card6 {
+   grid-area: card6;
+}
+.card7 {
+   grid-area: card7;
+}
+.card8 {
+   grid-area: card8;
+}
+
+
+.element {
+   width: 576px;
+   display: grid;
+   gap: 8px;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas:"card1" 
+                       "card2"
+                       "card3"
+                       "card4"
+                       "card5"
+                       "card6"
+                       "card7"
+                       "card8";
+                       
+   }
+   @media (min-width:768px){
+      .element {
+         width: auto;
+         display: grid;
+         gap: 8px;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         grid-template-areas: "card1 card2 card3 card4"
+                              "card5 card6 card7 card8";
+      }
+   }
+   .h3 {
+      grid-area: h3;
+   }
+   .h4 {
+      grid-area: h4;
+   }
+   .info {
+      display: grid;
+      grid-template-areas:"h3"
+                          "h4";
+   }
+   
+   .footer1 {
+      grid-area: footer1;
+   }
+   .footer2 {
+      grid-area: footer2;
+   }
+   .footer3 {
+      grid-area: footer3;
+   }
+   .footer4 {
+      grid-area: footer4;
+   }
+   .footermenu {
+      
+       display: grid;
+       gap: 15px;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas: "footer1"
+                            "footer2"
+                            "footer3"
+                            "footer4";
+   }
+   @media (min-width:768px){
+      .footermenu {
+         display: grid;
+         gap: 15px;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: none;
+         grid-template-areas: "footer1 footer2 footer3 footer4"
+         
+      }
+   }
+   
+
+  
+
+
+
 
 
   
